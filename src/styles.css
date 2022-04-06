@@ -26,9 +26,9 @@ header div .active{
 .shop-nav{
     border-bottom: 1px solid gainsboro;
 }
-.shop-nav__buttons select{
-    margin-right: 1rem;
+.shop-nav__buttons button{
     width: 150px;
+    margin-right: 1rem;
     height: 42px;
     text-align: left;
     background-color: #f0f0f0;
@@ -36,7 +36,7 @@ header div .active{
     box-shadow: 1px 1px 3px #f0f0f0;
     font-weight: 500;
 }
-.shop-nav__buttons .active{
+.shop-nav__buttons button:hover{
     background-color: #eae5ff;
 }
 .shop-nav__icons button{
