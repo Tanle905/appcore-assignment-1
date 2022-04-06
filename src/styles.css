@@ -1,0 +1,105 @@
+/* @media (-webkit-device-pixel-ratio: 1.25) {
+    * {
+      zoom: 0.980;
+    }
+  } */
+header{
+    border: 1px gainsboro;
+    border-style: none none solid none;
+}
+header div{
+    border: 1px gainsboro;
+    border-style: none solid none none;
+    padding: 20px;
+    font-weight: 600;
+}
+header div:last-child{
+    font-weight: 500;
+}
+header div a{
+    color:#1b1b1b;
+}
+header div .active{
+    border-bottom: 1px ridge;
+    color:#435cf1;
+}
+.shop-nav{
+    border-bottom: 1px solid gainsboro;
+}
+.shop-nav__buttons select{
+    margin-right: 1rem;
+    width: 150px;
+    height: 42px;
+    text-align: left;
+    background-color: #f0f0f0;
+    color:#242424;
+    box-shadow: 1px 1px 3px #f0f0f0;
+    font-weight: 500;
+}
+.shop-nav__buttons .active{
+    background-color: #eae5ff;
+}
+.shop-nav__icons button{
+    width: 45px;
+    height: 45px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.shop-nav__icons--cart{
+    border-radius: 50%;
+    border : 6px solid;
+    background-color: #552ef5;
+    color: #552ef5;
+    top: -1px;
+    right:-2px
+}
+.shop-nav__divider{
+    border-right: 1px rgb(201, 201, 201) solid;
+    box-shadow: 1px 0px 1px rgb(222, 222, 222);
+    height: 50%;
+}
+.shop-nav__dashboard select{
+    font-weight: 500;
+}
+.dashboard__img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.content__main__article{
+    width: 300px;
+}
+.content__main__article--pill{
+    width: 100px;
+    height: 40px;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+.content__main__article__image{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+.content__side__article a{
+    color: #aeaeae;
+}
+.content__side__article__title--new{
+    font-size: xx-small;
+    font-weight: bold;
+    padding: 5px 15px;
+    background-color: #ddf3d9;
+    color: #689278;
+    border-radius: 3px;
+}
+.content__side__article__image{
+    width: 130px;
+    height: 70px;
+    padding: 1px;
+    border-radius: 10px;
+}
+.content__side__article__title{
+    color: #322676;
+}
