@@ -40,7 +40,7 @@ header div a:not(.active):hover {
   box-shadow: 1px 1px 3px #f0f0f0;
   font-weight: 500;
 }
-.shop-nav__buttons button:hover {
+.shop-nav__buttons button:not(.active):not(:focus):hover {
   background-color: #eae5ff;
 }
 .shop-nav__buttons button:focus {
@@ -48,9 +48,9 @@ header div a:not(.active):hover {
   color: #ededed;
 }
 .shop-nav__buttons .active {
-    background-color: #552ef5;
-    color: #ededed;
-  }
+  background-color: #552ef5;
+  color: #ededed;
+}
 .shop-nav__icons button {
   width: 45px;
   height: 45px;
@@ -125,6 +125,11 @@ header div a:not(.active):hover {
   padding: 0px;
   cursor: pointer;
 }
+.content__main__article__image {
+  width: 270px;
+  height: 150px;
+  border-radius: 10px;
+}
 .content__main__article--pill {
   width: 100px;
   height: 40px;
@@ -144,11 +149,11 @@ header div a:not(.active):hover {
   animation: pill-pulse 4s infinite;
 }
 .content__main__article--pill--content:last-child {
-    width: 200px;
-    height: 10px;
-    border-radius: 5px;
-    animation: pill-pulse 4s infinite;
-  }
+  width: 200px;
+  height: 10px;
+  border-radius: 5px;
+  animation: pill-pulse 4s infinite;
+}
 @keyframes pill-pulse {
   0% {
     background-color: #e4e4e482;
@@ -159,12 +164,6 @@ header div a:not(.active):hover {
   100% {
     background-color: #e4e4e482;
   }
-}
-
-.content__main__article__image {
-  width: 270px;
-  height: 150px;
-  border-radius: 10px;
 }
 .content__side__article a {
   color: #aeaeae;
@@ -189,4 +188,36 @@ header div a:not(.active):hover {
 }
 .content__side__article__title {
   color: #322676;
+}
+@media only screen and (max-width: 576px) {
+  .content__main__article {
+    width: 320px;
+    padding: 5px 0;
+    cursor: pointer;
+    border-bottom: 1px rgba(201, 201, 201, 0.606) solid;
+  }
+  .content__main__article__image {
+    width: 320px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .content__main__article--pill {
+    margin-top: 15px;
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    animation: pill-pulse 4s infinite;
+  }
+  .content__main__article--pill--image {
+    width: 320px;
+    height: 150px;
+    border-radius: 10px;
+    animation: pill-pulse 4s infinite;
+  }
+  .content__main__article--pill--content {
+    width: 320px;
+    height: 10px;
+    border-radius: 5px;
+    animation: pill-pulse 4s infinite;
+  }
 }
