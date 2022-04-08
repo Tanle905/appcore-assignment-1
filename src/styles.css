@@ -59,12 +59,12 @@ header div a:not(.active):hover {
   margin-right: 10px;
 }
 .shop-nav__icons button:hover {
-  outline: 2px solid #552ef5;
-  transition: ease 100ms;
+  outline: 3px solid #552ef5;
+  transition: ease 200ms;
 }
 .shop-nav__icons--certificate:hover {
-  transform: rotate(90deg);
-  transition: ease 200ms;
+  transform: rotate(180deg);
+  transition: ease 600ms;
 }
 .shop-nav__icons--heart:hover {
   transform: rotateY(180deg);
@@ -77,7 +77,7 @@ header div a:not(.active):hover {
   color: #552ef5;
   top: -1px;
   right: -2px;
-  animation: cart-pulse 4s infinite;
+  animation: cart-pulse 3s infinite;
 }
 @keyframes cart-pulse {
   0% {
@@ -122,8 +122,27 @@ header div a:not(.active):hover {
 }
 .content__main__article {
   width: 270px;
-  padding: 0px;
   cursor: pointer;
+}
+.content__main__article h4:hover{
+  display: inline-block;
+  position: relative;
+}
+.content__main__article h4:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #212121;
+  transform-origin: bottom right;
+  transition: transform 200ms ease-out;
+}
+.content__main__article h4:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .content__main__article__image {
   width: 270px;
@@ -195,7 +214,6 @@ header div a:not(.active):hover {
     width: 320px;
     padding: 5px 0;
     cursor: pointer;
-    border-bottom: 1px rgba(201, 201, 201, 0.606) solid;
   }
   .content__main__article__image {
     width: 320px;
@@ -203,7 +221,6 @@ header div a:not(.active):hover {
     border-radius: 10px;
   }
   .content__main__article--pill {
-    margin-top: 15px;
     width: 320px;
     height: 40px;
     border-radius: 5px;
