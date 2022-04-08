@@ -16,16 +16,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="container-fluid">
     <header class="d-none d-sm-flex row bold">
-      <div class="col col-sm-3 col-lg-2 col-xxl-1 d-flex justify-content-center ms-md-4">
+      <div
+        class="col col-sm-3 col-lg-2 col-xxl-1 d-flex justify-content-center ms-md-4"
+      >
         <a href="#" class="text-decoration-none active">Online store</a>
       </div>
       <div class="col col-sm-2 col-lg-1 d-flex justify-content-center">
         <a href="#" class="text-decoration-none">Quotes</a>
       </div>
-      <div class="col col-sm-3 col-lg-2 col-xxl-1 d-flex justify-content-center px-2">
+      <div
+        class="col col-sm-3 col-lg-2 col-xxl-1 d-flex justify-content-center px-2"
+      >
         <a href="#" class="text-decoration-none">👋 Contact us</a>
       </div>
       <div class="col d-flex">
@@ -35,7 +45,10 @@
           class="ms-auto me-1"
           style="width: 40px; height: 23px"
         />
-        <a href="#" class="d-none d-sm-block me-1 me-sm-4 me-md-5 text-decoration-none">
+        <a
+          href="#"
+          class="d-none d-sm-block me-1 me-sm-4 me-md-5 text-decoration-none"
+        >
           Australia<i class="fa-solid ms-2 fa-chevron-down"></i
         ></a>
       </div>
@@ -91,11 +104,31 @@
         </div>
       </div>
     </section>
-    <section class="mx-xxl-5 my-5 content">
-      <div class="row mx-auto mx-sm-1">
-        <div class="col-lg-9 row content__main gx-0 mx-auto mx-sm-1"
-        style="width: 72%;"
+    <section class="mx-xxl-5 my-lg-5 content">
+      <div class="dropdown d-lg-none py-2 mx-auto mx-sm-1">
+        <button
+          class="btn dropdown-button dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
         >
+        Sustainability
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <button class="btn d-flex">
+            <p class="my-auto">Shop</p>
+          </button>
+          <button class="btn d-flex">
+            <p class="my-auto">Resources</p>
+          </button>
+          <button class="btn d-flex">
+            <p class="my-auto">Sustainability</p>
+          </button>
+        </ul>
+      </div>
+      <div class="row mx-auto mx-sm-1">
+        <div class="col-12 col-lg-9 row content__main gx-0 mx-auto mx-sm-1">
           <div class="col-12 col-sm-6 col-md-4">
             <div class="content__main__article">
               <h4>Framework</h4>

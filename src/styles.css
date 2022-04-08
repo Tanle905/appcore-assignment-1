@@ -120,6 +120,15 @@ header div a:not(.active):hover {
   transition: ease 100ms;
   cursor: pointer;
 }
+.dropdown-button{
+  width: 150px;
+  height: 42px;
+  text-align: left;
+  background-color: #f0f0f0;
+  color: #242424;
+  box-shadow: 1px 1px 3px #f0f0f0;
+  font-weight: 500;
+}
 .content__main__article {
   width: 270px;
   cursor: pointer;
@@ -237,5 +246,10 @@ header div a:not(.active):hover {
     height: 10px;
     border-radius: 5px;
     animation: pill-pulse 4s infinite;
+  }
+}
+@media only screen and (min-width:992px){
+  .col-lg-9{
+    width: 72%;
   }
 }
