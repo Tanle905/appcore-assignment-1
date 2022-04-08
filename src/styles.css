@@ -121,7 +121,6 @@ header div a:not(.active):hover {
   cursor: pointer;
 }
 .content__main__article {
-  margin: 0 auto;
   width: 270px;
   padding: 0px;
   cursor: pointer;
@@ -192,6 +191,7 @@ header div a:not(.active):hover {
 }
 @media only screen and (max-width: 576px) {
   .content__main__article {
+    margin: 0 auto;
     width: 320px;
     padding: 5px 0;
     cursor: pointer;
