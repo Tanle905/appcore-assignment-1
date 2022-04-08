@@ -30,6 +30,27 @@ header div a:not(.active):hover {
 .shop-nav {
   border-bottom: 1px solid gainsboro;
 }
+.shop-nav__brand p{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.shop-nav__brand p:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #212121;
+  transform-origin: bottom right;
+  transition: transform 200ms ease-out;
+}
+.shop-nav__brand p:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 .shop-nav__buttons button {
   width: 150px;
   margin-right: 1rem;
@@ -60,7 +81,7 @@ header div a:not(.active):hover {
 }
 .shop-nav__icons button:hover {
   outline: 3px solid #552ef5;
-  transition: ease 200ms;
+  transition: ease 50ms;
 }
 .shop-nav__icons--certificate:hover {
   transform: rotate(180deg);
@@ -133,7 +154,7 @@ header div a:not(.active):hover {
   width: 270px;
   cursor: pointer;
 }
-.content__main__article h4:hover{
+.content__main__article h4{
   display: inline-block;
   position: relative;
 }
